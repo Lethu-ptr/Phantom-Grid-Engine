@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Lethukuthula Shongwe, 24020138, Computer Science and Software Engineering student">
+    <title>Lethukuthula Shongwe Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <h1>Lethu Shongwe</h1>
+        <p>BSc Computer Science and Software Engineering</p>
+        <!-- Profile Image -->
+        <img src="images/profile.jpg" alt="Portrait of Lethukuthula Shongwe" width="200">
+        
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <p>I am a second-year computer science student currently enrolled at BIUST. I am passionate about building efficient, cutting-edge, and scalable software. My long-term focus is on massive scale infrastructure and pushing the boundaries of what is possible in tech.</p>
+            <!-- About Section Image -->
+            <img src="images/about.jpg" alt="Coding setup" width="400">
+        </section>
+
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Technical Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> C++, C, Python</li>
+                <li><strong>Core Interests:</strong> Game Development, Automated Trading Systems</li>
+                <li><strong>Infrastructure:</strong> Virtual Machines (Fedora Linux & Ubuntu)</li>
+            </ul>
+            <!-- Skills Section Image -->
+            <img src="images/skills.jpg" alt="Programming languages illustration" width="400">
+        </section>
+
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Current Projects</h2>
+            <article>
+                <h3>AI & Systems Architecture</h3>
+                <p>Researching and designing massive scale infrastructure concepts for a high-impact final year project.</p>
+                <img src="images/ai-project.jpg" alt="AI systems architecture diagram" width="400">
+            </article>
+
+            <article>
+                <h3>Web Design Repository</h3>
+                <p>Developing responsive and accessible web interfaces focusing on modern HTML5 and semantic structure.</p>
+                <img src="images/web-design.jpg" alt="Web design mockup" width="400">
+            </article>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Get in Touch</h2>
+            <p>Feel free to reach out for collaborations or inquiries.</p>
+
+            <form action="/submit" method="POST" target="_blank">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    
+                    <label for="user-name">Full Name (Required)</label>
+                    <input type="text" id="user-name" name="name" required autocomplete="name">
+                    <br><br>
+
+                    <label for="user-email">Email Address (Required)</label>
+                    <input type="email" id="user-email" name="email" required autocomplete="email">
+                    <br><br>
+
+                    <label for="message-subject">Subject</label>
+                    <input type="text" id="message-subject" name="subject">
+                    <br><br>
+
+                    <label for="user-message">Message (Required)</label>
+                    <textarea id="user-message" name="message" required></textarea>
+                    <br><br>
+
+                    <input type="submit" value="Submit using POST">
+                    <input type="submit" formmethod="get" value="Submit using GET">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lethukuthula Shongwe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
