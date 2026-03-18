@@ -1,97 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio of Lethukuthula Shongwe, 24020138, Computer Science and Software Engineering student">
-    <title>Lethukuthula Shongwe Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio</title>
 </head>
-
 <body>
-    <header>
-        <h1>Lethu Shongwe</h1>
-        <p>BSc Computer Science and Software Engineering</p>
-        <!-- Profile Image -->
-        <img src="images/Pic_1.jpg" alt="Portrait of Lethukuthula Shongwe" width="200">
-        
-        <nav aria-label="Main Navigation">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!--NAVBAR-->
+  <nav>
+    <div class="left">
+        <a href="/">Lethu Shongwe</a>
+    </div>
 
-    <main>
-        <section id="about" aria-labelledby="about-heading">
-            <h2 id="about-heading">About Me</h2>
-            <p>I am a second-year computer science student currently enrolled at BIUST. I am passionate about building efficient, cutting-edge, and scalable software. My long-term focus is on massive scale infrastructure and pushing the boundaries of what is possible in tech.</p>
-            <!-- About Section Image -->
-            <img src="images/Pic_4.png" alt="Coding setup" width="400">
-        </section>
+    <div class="right">
+        <a href="http://github.com" target="_blank" rel="no-referrer">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+        </a>
 
-        <section id="skills" aria-labelledby="skills-heading">
-            <h2 id="skills-heading">Technical Skills</h2>
-            <ul>
-                <li><strong>Languages:</strong> C++, C, Python</li>
-                <li><strong>Core Interests:</strong> Game Development, Automated Trading Systems</li>
-                <li><strong>Infrastructure:</strong> Virtual Machines (Fedora Linux & Ubuntu)</li>
-            </ul>
-            <!-- Skills Section Image -->
-            <img src="images/Pic_3.jpg" alt="Programming languages illustration" width="400">
-        </section>
+        <a href="http://linkedin.com" target="_blank" rel="no-referrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+        </a>
 
-        <section id="projects" aria-labelledby="projects-heading">
-            <h2 id="projects-heading">Current Projects</h2>
-            <article>
-                <h3>AI & Systems Architecture</h3>
-                <p>Researching and designing massive scale infrastructure concepts for a high-impact final year project.</p>
-                <img src="images/Pic_2.webp" alt="AI systems architecture diagram" width="400">
-            </article>
+        <a href="http://instagram.com" target="_blank" rel="no-referrer">
+        <i class="fa-brands fa-instagram"></i>
+        <span>Instagram</span>
+        </a>
 
-            <article>
-                <h3>Web Design Repository</h3>
-                <p>Developing responsive and accessible web interfaces focusing on modern HTML5 and semantic structure.</p>
-                <img src="images/Pic_5.png" alt="Web design mockup" width="400">
-            </article>
-        </section>
+        <a href="mailto:sl24020138@biust.ac.bw">
+        <i class="fa-regular fa-envelope"></i>
+        <span>Email</span>
+        </a>
 
-        <section id="contact" aria-labelledby="contact-heading">
-            <h2 id="contact-heading">Get in Touch</h2>
-            <p>Feel free to reach out for collaborations or inquiries.</p>
+    </div>
+  </nav> 
+  
+  <main>
+    <!--SECTION 1: Intro-->
+    <section class="intro-section">
+        <div class="text">
+            <h2>Hi, I'm Lethu👋</h2>
+            <p> I am a second-year computer science student currently enrolled at BIUST.<br>
+                I am passionate about building efficient, cutting-edge, and scalable software.<br>
+                My long-term focus is on massive scale infrastructure and pushing the boundaries of what is possible in tech.</p><br>
 
-            <form action="/submit" method="POST" target="_blank">
-                <fieldset>
-                    <legend>Contact Information</legend>
-                    
-                    <label for="user-name">Full Name (Required)</label>
-                    <input type="text" id="user-name" name="name" required autocomplete="name">
-                    <br><br>
+                <div class="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
 
-                    <label for="user-email">Email Address (Required)</label>
-                    <input type="email" id="user-email" name="email" required autocomplete="email">
-                    <br><br>
+                    <a href="#testimony">
+                        <i class="fa-solid fa-pen"></i>
+                        <span>Testimony</span>
+                    </a>
 
-                    <label for="message-subject">Subject</label>
-                    <input type="text" id="message-subject" name="subject">
-                    <br><br>
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
 
-                    <label for="user-message">Message (Required)</label>
-                    <textarea id="user-message" name="message" required></textarea>
-                    <br><br>
+                </div>
 
-                    <input type="submit" value="Submit using POST">
-                    <input type="submit" formmethod="get" value="Submit using GET">
-                </fieldset>
-            </form>
-        </section>
-    </main>
+        </div>
 
-    <footer>
-        <p>&copy; 2026 Lethukuthula Shongwe. All rights reserved.</p>
-    </footer>
+        <div class="headshot">
+            <img src="images/Pic_1.webp" alt="Lethu Shongwe headshot">
+        </div>
+    </section>
+
+    <!--SECTION 2: Skills-->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="text">
+
+        Creative web developer skilled in HTML5, CSS3, and JavaScript. 
+        Experienced with Python, C++, and Linux environments. 
+        Passionate about building responsive, accessible, and user-friendly designs.
+
+      </div>
+
+      <div class="cells">
+        <div class="cells">
+            <img src="images/icons8-html-5-480.webp" alt="html-logo">
+            <span>HTML</span>
+        </div>
+
+        <div class="cells">
+            <img src="images/icons8-css-logo-480.webp" alt="css-logo">
+            <span>CSS</span>
+        </div>
+
+        <div class="cells">
+            <img src="images/icons8-javascript-480.webp" alt="javascript-logo">
+            <span>JavaScript</span>
+        </div>
+
+        <div class="cells">
+            <img src="images/icons8-react-80.webp" alt="react-logo">
+            <span>REACT</span>
+        </div>
+
+    </div>
+
+    <!--SECTION 3: Testimony-->
+    <section id="testimony"></section>
+
+    <!--SECTION 4: Contact-->
+    <section id="contact"></section>
+
+  </main>
 </body>
 </html>
