@@ -71,7 +71,7 @@ nav .right a span {
 }
 
 .intro-section .text h2{
-    font-size: 45px;
+    font-size: 45;
 }
 
 .hero-section .text .links{
@@ -101,6 +101,53 @@ nav .right a span {
 .intro-section .headshot img{
     width: 350px;
     border-radius: 50%;
+}
+
+/*SECTION 2: Skills */
+.skills-section {
+    padding: 0 50;
+    margin-bottom: 100;
+}
+
+.skills-section h2 {
+
+    text-align: center;
+    font-size: 35px;    
+}
+
+.skills-section .text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .cells .cells {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
+}
+
+.skills-section .cells .cells img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+
+}
+
+.skills-section .cells .cell span{
+    font-size: 18px;
 }
 
 @media (max-width: 850px) {
@@ -149,6 +196,16 @@ nav .right a span {
 
     .hero-section .text h2 {
         font-size: 30px;
+    }
+
+    /*SECTION 2: Skills*/
+    .skills-section {
+        padding: 0 20px;
+    }
+
+    .skills-section .cells .cells  span{
+        font-size: 16px;
+        
     }
 }
 
