@@ -4,6 +4,7 @@
     --background-color: #eeeff1;
 }
 
+/*Box Model styling*/
 *{
     margin: 0;
     padding: 0;
@@ -17,6 +18,8 @@ html {
 body {
     font-family: "Poppins", sans-serif;
     background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 a {
@@ -71,7 +74,7 @@ nav .right a span {
 }
 
 .intro-section .text h2{
-    font-size: 45px;
+    font-size: 45;
 }
 
 .hero-section .text .links{
@@ -103,6 +106,139 @@ nav .right a span {
     border-radius: 50%;
 }
 
+/*SECTION 2: Skills */
+.skills-section {
+    padding: 0 50;
+    margin-bottom: 100;
+}
+
+.skills-section h2 {
+
+    text-align: center;
+    font-size: 35px;    
+}
+
+.skills-section .text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .cells .cells {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
+}
+
+.skills-section .cells .cells img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+
+}
+
+.skills-section .cells .cells span{
+    font-size: 18px;
+}
+
+/*SECTION 3: Projects*/
+.projects-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.projects-section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.projects-section .group {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.projects-section .group .person-details {
+    text-align: center;
+    flex: 2;
+}
+
+.projects-section .group .person-details img {
+    width: 250px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%; 
+}
+
+.projects-section .group .text {
+    flex: 8;
+}
+
+/* SECTION 4: Contact */
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+
+}
+
+.contact-section h2 {
+    font-size: 35px;
+}
+
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .group .text {
+    flex: 3;
+    margin-top: 20px;
+}
+
+.contact-section .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.contact-section .group form input form button {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: var(--link-color);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.contact-section .group form input form button: hover {
+    filter: brightness(.9);
+}
+
+
 @media (max-width: 850px) {
     /*SECTION 1: Intro*/
     .intro-section .text h2 {
@@ -120,6 +256,20 @@ nav .right a span {
 
 .intro-section .headshot img {
     width: 300px;
+}
+
+/* SECTION 3: Projects */
+.projects-section {
+    text-align: center;
+}
+
+.projects-section .group {
+    flex-direction: column;
+}
+
+/* SECTION 4: Contact */
+.contact-section .group {
+    flex-direction: column;
 }
 
 @media (max-width: 600px) {
@@ -150,5 +300,24 @@ nav .right a span {
     .hero-section .text h2 {
         font-size: 30px;
     }
-}
+
+    /*SECTION 2: Skills*/
+    .skills-section {
+        padding: 0 20px;
+    }
+
+    .skills-section .cells .cells  span{
+        font-size: 16px;
+        
+    }
+
+    /*SECTION 3: Projects */
+    .projects-section {
+        padding: 0 20px;
+    }
+
+    /* SECTION 4: Contact */
+    .contact-section {
+        padding: 0 20px;
+    }
 

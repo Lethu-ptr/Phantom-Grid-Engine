@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="style.css">
+    
     <title>Personal Portfolio</title>
 </head>
 <body>
@@ -80,11 +81,11 @@
     </section>
 
     <!--SECTION 2: Skills-->
-    <section id="skills">
+    <section id="skills" class="skills-section">
       <h2>Skills</h2>
       <div class="text">
 
-        Creative web developer skilled in HTML5, CSS3, and JavaScript. 
+        Creative web developer skilled in HTML5, CSS3,  React and JavaScript. 
         Experienced with Python, C++, and Linux environments. 
         Passionate about building responsive, accessible, and user-friendly designs.
 
@@ -113,11 +114,52 @@
 
     </div>
 
-    <!--SECTION 3: Testimony-->
-    <section id="testimony"></section>
+    <!--SECTION 3: Projects-->
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+         
+
+        <div class="group">
+           <div class="person-details">
+             <img src="images/Pic_2.webp">
+           
+         </div>
+
+         <div class="text">
+            
+            "As a Computer Science student, I have built several projects using HTML, CSS, JavaScript, and React. 
+            These include designing responsive portfolio websites, creating interactive to-do list apps, 
+            developing simple games like Tic-Tac-Toe, and building dynamic React applications such as weather dashboards and product catalogs. 
+            Each project strengthened my skills in front-end development, interactivity, and modern component-based design."
+
+         </div>   
+    </section>
 
     <!--SECTION 4: Contact-->
-    <section id="contact"></section>
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
+        <div class="text">
+            
+        If you would like to get in touch, please fill out the contact form provided below. Simply enter your name, email address, and your message, then click Submit.
+        Your inquiry will be sent directly to the site owner, who will respond as soon as possible.
+         Whether you have questions, feedback, or collaboration ideas, this form is the easiest way to connect.
+        </div>
+
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email">
+
+            
+            <label for="message">Message</label>
+            <textarea id="message" cols="30" rows="10"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
 
   </main>
 </body>
